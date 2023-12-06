@@ -1,0 +1,71 @@
+/*color*/
+$primary: #1b476d;
+$secondary: #f6fafb;
+$accent: #fff041;
+$third: #fff;
+$fourth: black;
+
+$colors:(
+  'primary':    $primary,
+  'secondary':  $secondary,
+  'accent':     $accent,
+  'third':      $third,
+  'fourth':     $fourth
+);
+
+
+/*size*/
+$xs: 0.25rem;
+$s: 0.75rem;
+$m: 1rem;
+$l: 1.25rem;
+$xl: 1.75rem;
+
+$sizes:(
+  'xs':  $xs,
+  's':   $s,
+  'm':   $m,
+  'l':   $l,
+  'xl':  $xl,
+);
+
+
+/*percent*/
+$zero:        0%;
+$ten:         10%;
+$fifteen:     15%;
+$twenty:      20%;
+$twentyfive:  25%;
+$fifty:       50%;
+$seventyfive: 75%;
+$eighty:      80%;
+$eightyfive:  85%;
+$ninty:       90%;
+$nintyfive:   95%;
+$hundred:     100%;
+
+$percentages:(
+  '0':        $zero,
+  '10':       $ten,
+  '15':       $fifteen,
+  '20':       $twenty,
+  '25':       $twentyfive,
+  '50':       $fifty,
+  '75':       $seventyfive,
+  '80':       $eighty,
+  '85':       $eightyfive,
+  '90':       $ninty,
+  '95':       $nintyfive,
+  '100':      $hundred,
+);
+
+/*breakpoints*/
+$mobile: 576px;
+$pad: 768px;
+$pc: 992px;
+
+$breakpoints:(
+  'mobile': $mobile,
+  'pad':    $pad,
+  'pc':     $pc,
+);

@@ -1,0 +1,54 @@
+.home-logo {
+  color: $third;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+
+  &-logo {
+    font-size: 350px;
+    line-height: 350px;
+    font-weight: 100;
+    margin-bottom: $m;
+
+    @include pc {
+      font-size: 250px;
+      line-height: 250px;
+    }
+    @include mobile {
+      font-size: 200px;
+      line-height: 200px;
+    }
+  }
+
+  &-intro {
+    font-size: $xl;
+    font-weight: normal;
+    line-height: $xl;
+    margin-bottom: $m;
+    @include pc{
+      font-size: $l;
+      line-height: $l;
+    }
+  }
+
+  &-title {
+    font-size: 52px;
+    line-height: 52px;
+    font-weight: normal;
+    @include pc{
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+}
+
+.home-logo {
+  &-logo-small {
+    color: $third;
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 100;
+  }
+}

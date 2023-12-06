@@ -1,0 +1,58 @@
+.card {
+  width: 100%;
+  background-color: $third;
+  border: 3px solid $primary;
+  border-radius: 50px;
+  margin-top: 4vw;
+  position: relative;
+
+  &-img {
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+  }
+
+  &-text {
+    padding: 30px;
+  }
+
+  &-title {
+    font-size: $l;
+    font-weight: 800;
+    margin-bottom: $l;
+  }
+
+  &:before {
+    content: '1';
+    position: absolute;
+    top: -4vw;
+    font-family: 'Work Sans', sans-serif;
+    font-style: italic;
+    font-size: $xl;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 8vw; //這裡要改
+    height: 8vw; //這裡要改 
+    background-color: $accent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include pc {
+      top: -6vw;
+      width: 10vw; //這裡要改
+      height: 10vw; //這裡要改
+    }
+
+    @include pad {
+      top: -7vw;
+      width: 15vw; //這裡要改
+      height: 15vw; //這裡要改
+    }
+
+    @include mobile {
+      top: -10vw;
+      width: 20vw; //這裡要改
+      height: 20vw; //這裡要改
+    }
+  }
+}

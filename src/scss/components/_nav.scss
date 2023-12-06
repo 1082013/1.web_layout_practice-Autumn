@@ -1,0 +1,17 @@
+.nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  @include pad{
+    display: none;
+  }
+  li{
+    padding: 5px 20px;
+  }
+  &-hamburger{
+    display: none;
+    @include pad{
+      display: block;
+    }
+  }
+}

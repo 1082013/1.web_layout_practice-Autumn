@@ -1,0 +1,27 @@
+.title {
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: $s;
+  font-weight: 800;
+  font-style: italic;
+  color: $secondary;
+  -webkit-text-stroke: 2px $primary;
+  margin-bottom: $m;
+
+  @include mobile {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: $xs;
+  }
+}
+
+.subtitle {
+  font-size: $l;
+  font-weight: 800;
+
+  @include mobile {
+    font-size: $m;
+    line-height: $m;
+    letter-spacing: $xs;
+  }
+}

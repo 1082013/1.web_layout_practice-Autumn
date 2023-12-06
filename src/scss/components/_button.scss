@@ -1,0 +1,32 @@
+.btn {
+  width: 100%;
+  font-size: $m;
+  font-weight: 700;
+  color: $primary;
+  background-color: $third;
+  border: $primary 2px solid;
+  border-radius: 50px;
+  transition-duration: 500ms;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+
+  &::after {
+    content: url(../../src/assets/icon/right-arrow.svg);
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    fill: $primary;
+    transition-duration: 500ms;
+  }
+
+  &:hover {
+    color: $third;
+    background-color: $primary;
+
+    &::after {
+      filter: brightness(0) invert(1);
+    }
+  }
+}

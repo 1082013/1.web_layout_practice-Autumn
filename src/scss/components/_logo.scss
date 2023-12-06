@@ -1,0 +1,10 @@
+.logo{
+  &-title{
+    font-style: italic;
+    color: $third;
+    margin-bottom: $s;
+  }
+  &-subtitle{
+    color: $third;
+  }
+}

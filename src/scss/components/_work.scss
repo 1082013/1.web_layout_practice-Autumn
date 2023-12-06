@@ -1,0 +1,17 @@
+.work{
+  &-img{
+    margin-bottom: $s;
+  }
+  &-title{
+    font-size: $l;
+    font-style: italic;
+    line-height: $l;
+    font-weight: 800;
+    margin-bottom: $s;
+  }
+  &-subtitle{
+    font-size: $m;
+    line-height: $m;
+    margin-bottom: 50px;
+  }
+}

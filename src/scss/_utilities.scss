@@ -1,0 +1,30 @@
+@each $key, $value in $colors{
+  .c-#{$key}{
+    color: $value;
+  }
+}
+@each $key, $value in $sizes{
+  .fz-#{$key}{
+    font-size: $value;
+  }
+  .lh-#{$key}{
+    line-height: $value;
+  }
+  .mb-#{$key}{
+    margin-bottom: $value;
+  }
+  .mt-#{$key}{
+    margin-top: $value;
+  }
+  .mr-#{$key}{
+    margin-right: $value;
+  }
+  .ml-#{$key}{
+    margin-left: $value;
+  }
+}
+@each $key, $value in $percentages{
+  .w-#{$key}{
+    width: $value;
+  }
+}
