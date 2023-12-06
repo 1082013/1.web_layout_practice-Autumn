@@ -2,12 +2,9 @@ footer{
   background: url(../../src/assets/img/chris-lawton.jpg);
   background-position: center center;
   background-size: cover;
-  position: relative;
   .copyright{
+    text-align: center;
     color: $third;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-bottom: 10px;
   }
 }

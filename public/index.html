@@ -18,19 +18,17 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-
   <!--google icon( hamberger menu )-->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
-
   <!--swiper-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+  <!--main css-->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="mb-100">
+  <header id="Home" class="mb-100">
     <div class="container justify-between">
       <div class="menu">
         <div class="logo">
@@ -40,19 +38,18 @@
           </a>
         </div>
         <ul class="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Message</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Works</a></li>
-          <li><a href="">Document</a></li>
-          <li><a href="">Question</a></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Message">Message</a></li>
+          <li><a href="#Service">Service</a></li>
+          <li><a href="#Works">Works</a></li>
+          <li><a href="#Document">Document</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
         <span class="material-symbols-rounded nav-hamburger fz-xl c-third ">
           menu
         </span>
       </div>
     </div>
-
     <div class="home-logo">
       <h2 class="home-logo-logo">秋</h2>
       <p class="home-logo-intro">私は好きな</p>
@@ -60,8 +57,7 @@
     </div>
   </header>
 
-
-  <div class="container mb-100">
+  <div id="Message" class="container mb-100">
     <h3 class="title">MESSAGE</h3>
     <h3 class="subtitle mb-50">Lorem ipsum dolor sit amet.</h3>
     <div class="row align-items-center mb-100">
@@ -75,7 +71,6 @@
         <img class="message-img" src="../src/assets/img/message-1.jpg" alt="">
       </div>
     </div>
-
     <div class="row align-items-center flex-row-reverse mb-100">
       <div class="col-12 col-md-5">
         <h4 class="message-title">最高の季節、<br>涼しく、同時に暖かい!</h4>
@@ -89,10 +84,7 @@
     </div>
   </div>
 
-
-
-
-  <div class="container mb-100">
+  <div id="Service" class="container mb-100">
     <h3 class="title">SERVISE</h3>
     <h3 class="subtitle mb-xl">Lorem ipsum, adipisicing.</h3>
     <div class="row justify-center">
@@ -134,18 +126,7 @@
     </div>
   </div>
 
-
-  <!-- <div class="card">
-    <img src="../src/assets/img/gautam-singh.jpg" alt="" class="card-img">
-    <div class="card-text">
-      <h4 class="card-title">2616512561</h4>
-      <p class="card-p">Accusamus laboriosam earum ad quidem autem error eum
-        delectus cumque, sint est facere voluptas quaerat. voluptate voluptatem reiciendis eaque libero doloremque
-        quibusdam!</p>
-    </div>
-  </div> -->
-
-  <div class="container mb-100">
+  <div id="Works" class="container mb-100">
     <h3 class="title">WORKS</h3>
     <h3 class="subtitle mb-50">Lorem, ipsum dolor.</h3>
     <div class="row mb-50">
@@ -187,11 +168,9 @@
     </div>
   </div>
 
-
-  <div class="container mb-50">
+  <div id="Document" class="container mb-50">
     <h3 class="title">DOCUMENT</h3>
     <h3 class="subtitle mb-50">Lorem ipsum dolor sit.</h3>
-
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -201,12 +180,11 @@
               <h4 class="document-title">涼しく、同時に暖かい!<br>最高の季節</h4>
             </div>
             <div class="document-text align-items-end justify-end">
-              <h1 class="logo-title fz-l lh-l align-items-end mb-50 mr-50">Autumn新しい</h1>
+              <h1 class="logo-title-small align-items-end mb-30 mr-30">Autumn新しい</h1>
             </div>
             <div class="document-bgimg" style="background-image: url(../src/assets/img/doc-1.jpg);"></div>
           </div>
         </div>
-
         <div class="swiper-slide">
           <div class="document mb-50">
             <div class="document-text">
@@ -214,12 +192,11 @@
               <h4 class="document-title">涼しく、同時に暖かい!<br>最高の季節</h4>
             </div>
             <div class="document-text align-items-end justify-end">
-              <h1 class="logo-title fz-l lh-l align-items-end mb-50 mr-50">Autumn新しい</h1>
+              <h1 class="logo-title-small align-items-end mb-30 mr-30">Autumn新しい</h1>
             </div>
             <div class="document-bgimg" style="background-image: url(../src/assets/img/doc-2.jpg);"></div>
           </div>
         </div>
-
         <div class="swiper-slide">
           <div class="document mb-50">
             <div class="document-text">
@@ -227,15 +204,13 @@
               <h4 class="document-title">涼しく、同時に暖かい!<br>最高の季節</h4>
             </div>
             <div class="document-text align-items-end justify-end">
-              <h1 class="logo-title fz-l lh-l align-items-end mb-50 mr-50">Autumn新しい</h1>
+              <h1 class="logo-title-small align-items-end mb-30 mr-30">Autumn新しい</h1>
             </div>
             <div class="document-bgimg" style="background-image: url(../src/assets/img/doc-3.jpg);"></div>
           </div>
         </div>
-
       </div>
     </div>
-
     <div class="row">
       <div class="col-10 col-md-6 col-lg-4 d-flex justify-center m-auto">
         <button class="btn w-80 mb-50">See More</button>
@@ -243,8 +218,7 @@
     </div>
   </div>
 
-
-  <footer>
+  <footer id="Contact">
     <div class="container py-100">
       <div class="row mb-xl">
         <div class="col-12 col-md-6">
@@ -258,21 +232,21 @@
         </div>
         <div class="col-3">
           <ul class="nav flex-column">
-            <li><a href="">Home</a></li>
-            <li><a href="">Message</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">Works</a></li>
-            <li><a href="">Document</a></li>
-            <li><a href="">Question</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Message">Message</a></li>
+            <li><a href="#Service">Service</a></li>
+            <li><a href="#Works">Works</a></li>
+            <li><a href="#Document">Document</a></li>
+            <li><a href="#Question">Question</a></li>
           </ul>
         </div>
         <div class="col-3">
           <ul class="nav flex-column">
-            <li><a href="">Document</a></li>
-            <li><a href="">Message</a></li>
-            <li><a href="">Works</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Service</a></li>
+            <li><a href="#">Document</a></li>
+            <li><a href="#">Message</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
           </ul>
         </div>
       </div>
@@ -280,7 +254,7 @@
         <h2 class="home-logo-logo-small">秋</h2>
       </div>
     </div>
-    <h6 class="copyright ">Copyright © 2023 蔡容安 All Rights Reserved</h6>
+    <h6 class="copyright">Copyright © 2023 蔡容安 All Rights Reserved</h6>
   </footer>
 
 

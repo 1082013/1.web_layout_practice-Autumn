@@ -3,6 +3,194 @@
 /*size*/
 /*percent*/
 /*breakpoints*/
+.c-primary {
+  color: #1b476d;
+}
+
+.c-secondary {
+  color: #f6fafb;
+}
+
+.c-accent {
+  color: #fff041;
+}
+
+.c-third {
+  color: #fff;
+}
+
+.c-fourth {
+  color: black;
+}
+
+.fz-xs {
+  font-size: 0.25rem;
+}
+
+.lh-xs {
+  line-height: 0.25rem;
+}
+
+.mb-xs {
+  margin-bottom: 0.25rem;
+}
+
+.mt-xs {
+  margin-top: 0.25rem;
+}
+
+.mr-xs {
+  margin-right: 0.25rem;
+}
+
+.ml-xs {
+  margin-left: 0.25rem;
+}
+
+.fz-s {
+  font-size: 0.75rem;
+}
+
+.lh-s {
+  line-height: 0.75rem;
+}
+
+.mb-s {
+  margin-bottom: 0.75rem;
+}
+
+.mt-s {
+  margin-top: 0.75rem;
+}
+
+.mr-s {
+  margin-right: 0.75rem;
+}
+
+.ml-s {
+  margin-left: 0.75rem;
+}
+
+.fz-m {
+  font-size: 1rem;
+}
+
+.lh-m {
+  line-height: 1rem;
+}
+
+.mb-m {
+  margin-bottom: 1rem;
+}
+
+.mt-m {
+  margin-top: 1rem;
+}
+
+.mr-m {
+  margin-right: 1rem;
+}
+
+.ml-m {
+  margin-left: 1rem;
+}
+
+.fz-l {
+  font-size: 1.25rem;
+}
+
+.lh-l {
+  line-height: 1.25rem;
+}
+
+.mb-l {
+  margin-bottom: 1.25rem;
+}
+
+.mt-l {
+  margin-top: 1.25rem;
+}
+
+.mr-l {
+  margin-right: 1.25rem;
+}
+
+.ml-l {
+  margin-left: 1.25rem;
+}
+
+.fz-xl {
+  font-size: 1.75rem;
+}
+
+.lh-xl {
+  line-height: 1.75rem;
+}
+
+.mb-xl {
+  margin-bottom: 1.75rem;
+}
+
+.mt-xl {
+  margin-top: 1.75rem;
+}
+
+.mr-xl {
+  margin-right: 1.75rem;
+}
+
+.ml-xl {
+  margin-left: 1.75rem;
+}
+
+.w-0 {
+  width: 0%;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -184,6 +372,10 @@ h6 {
   line-height: 12px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Mulish", sans-serif;
   font-size: 1rem;
@@ -204,6 +396,11 @@ body a:hover {
 }
 body button {
   cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  body .container {
+    width: 90%;
+  }
 }
 
 .title {
@@ -328,6 +525,16 @@ body button {
   font-style: italic;
   color: #fff;
   margin-bottom: 0.75rem;
+}
+.logo-title-small {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+@media screen and (max-width: 576px) {
+  .logo-title-small {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+  }
 }
 .logo-subtitle {
   color: #fff;
@@ -495,10 +702,22 @@ body button {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+@media screen and (max-width: 992px) {
+  .document-title {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
 .document-subtitle {
   font-size: 0.75rem;
   line-height: 0.75rem;
   margin-bottom: 1.25rem;
+}
+@media screen and (max-width: 992px) {
+  .document-subtitle {
+    word-spacing: 0.01rem;
+    margin-bottom: 0.75rem;
+  }
 }
 
 header {
@@ -514,14 +733,11 @@ footer {
   background: url(../../src/assets/img/chris-lawton.jpg);
   background-position: center center;
   background-size: cover;
-  position: relative;
 }
 footer .copyright {
+  text-align: center;
   color: #fff;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  padding-bottom: 10px;
 }
 
 .float-right {
@@ -576,6 +792,14 @@ footer .copyright {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
 }
 
 .mr-50 {
@@ -1731,191 +1955,4 @@ footer .copyright {
   .gy-xxl-5 {
     --bs-gutter-y: 3rem;
   }
-}
-.c-primary {
-  color: #1b476d;
-}
-
-.c-secondary {
-  color: #f6fafb;
-}
-
-.c-accent {
-  color: #fff041;
-}
-
-.c-third {
-  color: #fff;
-}
-
-.c-fourth {
-  color: black;
-}
-
-.fz-xs {
-  font-size: 0.25rem;
-}
-
-.lh-xs {
-  line-height: 0.25rem;
-}
-
-.mb-xs {
-  margin-bottom: 0.25rem;
-}
-
-.mt-xs {
-  margin-top: 0.25rem;
-}
-
-.mr-xs {
-  margin-right: 0.25rem;
-}
-
-.ml-xs {
-  margin-left: 0.25rem;
-}
-
-.fz-s {
-  font-size: 0.75rem;
-}
-
-.lh-s {
-  line-height: 0.75rem;
-}
-
-.mb-s {
-  margin-bottom: 0.75rem;
-}
-
-.mt-s {
-  margin-top: 0.75rem;
-}
-
-.mr-s {
-  margin-right: 0.75rem;
-}
-
-.ml-s {
-  margin-left: 0.75rem;
-}
-
-.fz-m {
-  font-size: 1rem;
-}
-
-.lh-m {
-  line-height: 1rem;
-}
-
-.mb-m {
-  margin-bottom: 1rem;
-}
-
-.mt-m {
-  margin-top: 1rem;
-}
-
-.mr-m {
-  margin-right: 1rem;
-}
-
-.ml-m {
-  margin-left: 1rem;
-}
-
-.fz-l {
-  font-size: 1.25rem;
-}
-
-.lh-l {
-  line-height: 1.25rem;
-}
-
-.mb-l {
-  margin-bottom: 1.25rem;
-}
-
-.mt-l {
-  margin-top: 1.25rem;
-}
-
-.mr-l {
-  margin-right: 1.25rem;
-}
-
-.ml-l {
-  margin-left: 1.25rem;
-}
-
-.fz-xl {
-  font-size: 1.75rem;
-}
-
-.lh-xl {
-  line-height: 1.75rem;
-}
-
-.mb-xl {
-  margin-bottom: 1.75rem;
-}
-
-.mt-xl {
-  margin-top: 1.75rem;
-}
-
-.mr-xl {
-  margin-right: 1.75rem;
-}
-
-.ml-xl {
-  margin-left: 1.75rem;
-}
-
-.w-0 {
-  width: 0%;
-}
-
-.w-10 {
-  width: 10%;
-}
-
-.w-15 {
-  width: 15%;
-}
-
-.w-20 {
-  width: 20%;
-}
-
-.w-25 {
-  width: 25%;
-}
-
-.w-50 {
-  width: 50%;
-}
-
-.w-75 {
-  width: 75%;
-}
-
-.w-80 {
-  width: 80%;
-}
-
-.w-85 {
-  width: 85%;
-}
-
-.w-90 {
-  width: 90%;
-}
-
-.w-95 {
-  width: 95%;
-}
-
-.w-100 {
-  width: 100%;
 }/*# sourceMappingURL=style.css.map */

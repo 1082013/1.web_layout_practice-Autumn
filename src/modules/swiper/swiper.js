@@ -7,12 +7,12 @@ function initializeSwiper() {
   
     breakpoints: {
       // 視窗寬度 >= 414px
-      414: {
-        slidesPerView: 1.5,
+      768: {
+        slidesPerView: 1.75,
         spaceBetween: 30
       },
       // 視窗寬度 >= 767px
-      767: {
+      992: {
         slidesPerView: 2.5,
         spaceBetween: 50
       }

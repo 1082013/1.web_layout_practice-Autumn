@@ -1,10 +1,21 @@
-.logo{
-  &-title{
+.logo {
+  &-title {
     font-style: italic;
     color: $third;
     margin-bottom: $s;
+
+    &-small {
+      font-size: $l;
+      line-height: $l;
+
+      @include mobile {
+        font-size: $s;
+        line-height: $s;
+      }
+    }
   }
-  &-subtitle{
+
+  &-subtitle {
     color: $third;
   }
 }

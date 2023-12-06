@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: 'Mulish', sans-serif;
   font-size: $m;
@@ -6,7 +9,6 @@ body{
   line-height: $l;
   color: $primary;
   background-color: $secondary;
-  //overflow-x: hidden;
   margin: 0 auto;
 
   a{
@@ -20,5 +22,11 @@ body{
 
   button{
     cursor: pointer;
+  }
+
+  .container{
+    @include mobile{
+      width: 90%;
+    }
   }
 }

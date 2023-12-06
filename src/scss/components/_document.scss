@@ -25,11 +25,20 @@
   &-title {
     font-size: $l;
     line-height: $xl;
+
+    @include pc {
+      font-size: $m;
+      line-height: $l;
+    }
   }
 
   &-subtitle {
     font-size: $s;
     line-height: $s;
     margin-bottom: $l;
+    @include pc {
+      word-spacing: 0.01rem;
+      margin-bottom: $s;
+    }
   }
 }
